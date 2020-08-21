@@ -552,6 +552,20 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container-bgimage {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  height: 600px;
+  background: url('../docs/websitedetails/background.png') no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -6104,9 +6118,9 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color:  #114d91 !important;
-  background-image: url('../docs/websitedetails/background.png');
-  background-size: cover;
+  /* background-color:  #114d91 !important; */
+  background-image: url('../docs/rewebsitedetails/white-background.png');
+
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10052,6 +10066,9 @@ h3 {
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
+.divider-custom.divider-dark .divider-custom-line {
+  background-color: black;
+}
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff !important;
 }
@@ -10154,7 +10171,7 @@ h3 {
   background-size: cover;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 15px;
   line-height: 2.75rem;
   
 }
