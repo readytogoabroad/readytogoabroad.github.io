@@ -66,7 +66,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -9821,6 +9821,9 @@ button.bg-dark:focus {
 .text-white {
   color: #fff !important;
 }
+.text-blue-am {
+  color: #114d91 !important;
+}
 
 .text-primary {
   color: #1abc9c !important;
@@ -10293,5 +10296,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .copyright {
-  background-color: #1a252f;
+  /* background-color: #1a252f; */
+  background-color: #114d91;
+  color:  #ecc760;
 }
