@@ -399,6 +399,14 @@ h6, .h6 {
   font-size: 1.25rem;
   font-weight: 300;
 }
+.lead-2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
 
 .display-1 {
   font-size: 6rem;
@@ -10191,7 +10199,7 @@ h3 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
