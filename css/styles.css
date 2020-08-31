@@ -41,6 +41,11 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@font-face {
+  font-family: "BigCaslon";
+  src: url("../docs/rewebsitedetails/BigCaslon.ttf");
+}
+
 *,
 *::before,
 *::after {
@@ -61,7 +66,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -360,7 +365,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-family: "BigCaslon";
   font-weight: 700;
   line-height: 1.2;
 }
@@ -389,6 +395,14 @@ h6, .h6 {
   font-size: 1rem;
 }
 
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.lead-2 {
+  font-size: 1rem;
+  font-weight: 300;
+}
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -546,6 +560,20 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.container-bgimage {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  height: 600px;
+  background: url('../docs/websitedetails/background.png') no-repeat center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -594,6 +622,31 @@ pre code {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
+}
+.textDescription{
+  color: #114d91;
+  font-size: 10px;
+  margin-bottom: 1px;
+}
+.buttonMine {
+  background-color: #114d91;; /* Blue*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.textDescription h1{
+  font-size: 20px;
+}
+.img-port{
+  width:170px;
+  height:255px;
 }
 .row {
   display: flex;
@@ -4425,6 +4478,9 @@ input[type=button].btn-block {
   margin-left: -0.625rem;
   border-bottom: 0;
 }
+header{
+  min-width: fit-content;
+}
 
 .card-header-pills {
   margin-right: -0.625rem;
@@ -6095,7 +6151,9 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  /* background-color:  #114d91 !important; */
+  background-image: url('../docs/rewebsitedetails/white-background.png');
+
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6105,7 +6163,8 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #2c3e50 !important;
+  background-image: url('../docs/rewebsitedetails/white-background.png');
+  /* background:transparent; */
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -9795,6 +9854,9 @@ button.bg-dark:focus {
 .text-white {
   color: #fff !important;
 }
+.text-blue-am {
+  color: #114d91 !important;
+}
 
 .text-primary {
   color: #1abc9c !important;
@@ -10040,6 +10102,9 @@ h3 {
 .divider-custom.divider-light .divider-custom-line {
   background-color: #fff;
 }
+.divider-custom.divider-dark .divider-custom-line {
+  background-color: black;
+}
 .divider-custom.divider-light .divider-custom-icon {
   color: #fff !important;
 }
@@ -10075,28 +10140,31 @@ h3 {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+  font-family: "BigCaslon";
   font-weight: 700;
 }
 /* Color of nav elements of the menu */
 #mainNav .navbar-brand {
-  color: blue;
+  color:  #114d91;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 /* Color of the right hand element in the navigation bar */
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: blue;
+  color: #114d91;
 }
+
+/* ON HOVER NAVBAR */
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #1abc9c;
+  color: #5ca3f5;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #1abc9c;
+  color: #114d91;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10118,11 +10186,11 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #1abc9c;
+    background: #114d91;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #1abc9c;
+    background: #114d91;
   }
 
   #mainNav.navbar-shrink {
@@ -10136,10 +10204,12 @@ h3 {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  background-size: cover;
 }
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 15px;
   line-height: 2.75rem;
+  
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
@@ -10154,7 +10224,7 @@ h3 {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
@@ -10259,5 +10329,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .copyright {
-  background-color: #1a252f;
+  /* background-color: #1a252f; */
+  background-color: #114d91;
+  color:  #ecc760;
 }
