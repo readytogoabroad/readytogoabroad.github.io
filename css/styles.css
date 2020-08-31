@@ -623,6 +623,31 @@ pre code {
     max-width: 1140px;
   }
 }
+.textDescription{
+  color: #114d91;
+  font-size: 10px;
+  margin-bottom: 1px;
+}
+.buttonMine {
+  background-color: #114d91;; /* Blue*/
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.textDescription h1{
+  font-size: 20px;
+}
+.img-port{
+  width:170px;
+  height:255px;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
