@@ -66,7 +66,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -110,6 +110,40 @@ address {
   font-style: normal;
   line-height: inherit;
 }
+
+/* 960/720 */
+
+@media only screen and (max-width: 992px) {
+  .students{
+    width:700px;
+    height: 525px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .students{
+    width:500px;
+    height: 375px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .students{
+    width:400px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .students{
+    width:300px;
+    height: 225px;
+  }
+  .navbarimage{
+    width:5;
+    height: 5.8;
+  }
+}
+
+
+
 
 ol,
 ul,
@@ -627,6 +661,10 @@ pre code {
   color: #114d91;
   font-size: 10px;
   margin-bottom: 1px;
+}
+.navbarimage{
+  width: 60px;
+  height: 70px;
 }
 .buttonMine {
   background-color: #114d91;; /* Blue*/
@@ -2051,7 +2089,7 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
+  color: #ecc760;
   background-color: #fff;
   background-clip: padding-box;
   border: 0.125rem solid #ced4da;
@@ -4091,7 +4129,7 @@ input[type=button].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
   border: 0.125rem solid transparent;
